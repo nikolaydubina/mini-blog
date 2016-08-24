@@ -1,0 +1,19 @@
+{
+    "content": [
+        {
+            "raw": [
+                "thing.html",
+                "banner.jpg"
+            ]
+        },
+        {
+            "p": "This is my mini-blog.  New posts are processed from <a href='http://en.wikipedia.org/wiki/markdown'>Markdown</a> alike languge and pushed as commits to  <a href='https://pages.github.com/'>pages.github.io</a> dedicated repository.  For more details <a href='https://nikolaydubina.github.io/?t=post&v=1'>here</a> you can read about how and why I build it. "
+        }
+    ],
+    "header": {
+        "date": "",
+        "tags": [],
+        "location": "",
+        "title": ""
+    }
+}

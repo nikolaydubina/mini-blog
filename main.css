@@ -1,0 +1,333 @@
+/* fonts */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Open_Sans/OpenSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf") format("truetype"); }
+/* colors */
+/* links */
+/* main */
+.center, body > *, .post-list, .img-box-s, .img-box > div, #btn-prevnext-wr, .list, .raw-content {
+  margin-left: auto;
+  margin-right: auto; }
+
+a:link, a:visited {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: bold;
+  color: black; }
+
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll; }
+
+#main-header {
+  top: 0px;
+  width: 800px; }
+
+#main-header-text {
+  text-align: center; }
+
+#main-header-text > p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 60px;
+  color: #c8c8c8;
+  margin-top: 0px;
+  margin-bottom: 20px; }
+
+#main-header-thing-text > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+#main-menu-wr {
+  width: 100%;
+  height: 50px;
+  border-top: 2px dashed #c8c8c8;
+  overflow: hidden; }
+
+#main-menu li {
+  float: left; }
+
+.menu-link {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #c8c8c8;
+  cursor: pointer;
+  -webkit-user-select: none;
+  margin-left: 10px; }
+
+.menu-link-clicked {
+  display: block;
+  color: black;
+  border: 2px solid black;
+  padding: 6px 13px;
+  margin-left: 10px;
+  -webkit-user-select: none; }
+
+.menu-link:hover {
+  color: black;
+  border: 2px solid #aaaaaa;
+  padding: 6px 13px; }
+
+#main-menu {
+  width: 100%;
+  float: left;
+  opacity: 0;
+  margin-top: -30px;
+  padding: 0;
+  list-style: none; }
+
+#tag-selector {
+  opacity: 0;
+  visibility: hidden;
+  width: 800px;
+  height: auto;
+  background-color: #f0f0f0;
+  overflow: hidden; }
+
+.tag-selector-tag {
+  color: #aaaaaa;
+  margin: 5px 10px 5px 10px;
+  cursor: pointer;
+  display: inline-block; }
+
+.tag-selector-tag:hover {
+  color: #646464; }
+
+.tag-selector-tag-selected {
+  color: #323232;
+  display: inline-block;
+  margin: 5px 10px 5px 10px;
+  cursor: pointer; }
+
+/* post-holder */
+#post-holder {
+  width: 900px;
+  height: auto;
+  margin-top: 50px; }
+
+/* post-list */
+.post-list {
+  display: block;
+  margin-top: 10px;
+  width: 700px; }
+
+.pl-name {
+  font-size: 20px; }
+
+.pl-name > a {
+  font-weight: normal;
+  color: #aaaaaa; }
+
+.pl-name > a:hover {
+  color: #646464; }
+
+.pl-tags {
+  display: inline-block;
+  width: 550px;
+  font-size: 13px;
+  color: #aaaaaa;
+  vertical-align: top; }
+
+.pl-tags > a {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: normal;
+  color: #aaaaaa; }
+
+.pl-tags > a:hover {
+  color: #323232; }
+
+.pl-time-location {
+  display: inline-block;
+  width: 150px;
+  color: #aaaaaa;
+  font-size: 13px;
+  vertical-align: top; }
+
+/* post */
+.post {
+  margin-top: 10px;
+  width: 100%;
+  display: block; }
+
+.post > * {
+  width: 100%; }
+
+.post > header {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+  padding-bottom: 20px; }
+
+.p-name {
+  font-size: 30px; }
+
+.p-name > a {
+  font-weight: normal;
+  color: #aaaaaa; }
+
+.p-name > a:hover {
+  color: #646464; }
+
+.p-source-btn {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  font-size: 13px;
+  color: #aaaaaa; }
+
+.p-source-btn > a {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: normal;
+  color: #aaaaaa; }
+
+.p-source-btn > a:hover {
+  color: #323232; }
+
+.p-tags {
+  display: inline;
+  font-size: 16px;
+  color: #aaaaaa; }
+
+.p-tags > a {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: normal;
+  color: #aaaaaa; }
+
+.p-tags > a:hover {
+  color: #323232; }
+
+.p-time-location {
+  display: inline;
+  position: absolute;
+  color: #aaaaaa;
+  right: 0px;
+  font-size: 13px; }
+
+.post > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.75em; }
+
+.post-footer {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #c8c8c8;
+  text-align: center;
+  width: 100%; }
+
+/* navs */
+.range {
+  width: 250px; }
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background-color: #f0f0f0;
+  height: 2px;
+  vertical-align: middle;
+  border: 1px solid #f0f0f0;
+  outline: 1px solid #f0f0f0;
+  outline-offset: -1px;
+  margin-top: 15px; }
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  height: 20px;
+  width: 20px; }
+
+/* images */
+.img-container-wr {
+  overflow: hidden;
+  height: 0px; }
+
+.img-container {
+  /* image height */
+  height: 400px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  position: relative;
+  left: 0px; }
+
+.img-box-s {
+  position: relative; }
+
+.img-box {
+  height: 100%;
+  padding-right: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.img-box > img {
+  display: -webkit-box;
+  height: 100%; }
+
+.img-box > div {
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: 400px; }
+
+.img-name {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left; }
+
+/* btns prev and next */
+#btn-prevnext-wr {
+  width: 800px;
+  height: 200px;
+  position: relative; }
+
+#btn-prev, #btn-next {
+  visibility: hidden;
+  padding: 8px 15px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  color: #c8c8c8; }
+
+#btn-prev {
+  left: 0px; }
+
+#btn-next {
+  right: 0px; }
+
+#btn-prev:hover, #btn-next:hover {
+  border: 2px solid #aaaaaa;
+  padding: 6px 13px;
+  color: black; }
+
+/* list */
+.list {
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+.list > ul {
+  list-style-type: disk; }
+
+.list > ul > li {
+  margin-top: 10px; }
+
+/* raw */
+.raw-content {
+  width: 1000px;
+  margin-left: -50px;
+  height: auto; }
+
+.raw-content > iframe {
+  width: 100%;
+  height: 100%; }

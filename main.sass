@@ -1,0 +1,375 @@
+/* fonts */
+@font-face 
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    src: url('fonts/Open_Sans/OpenSans-Light.ttf') format('truetype')
+
+@font-face
+    font-family: 'Open Sans Condensed'
+    font-style: normal
+    font-weight: 300
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf') format('truetype')
+
+$font_regular   : 'Open Sans', sans-serif
+$font_light     : 'Open Sans Condensed', sans-serif
+
+$font_size_small     : 13px
+$font_size_regular   : 16px
+$font_size_medium    : 20px
+$font_size_big       : 30px
+
+/* colors */
+
+$black          : rgb(0,0,0)
+$vdark_grey     : rgb(50,50,50)
+$dark_grey      : rgb(100,100,100)
+$grey           : rgb(170,170,170)
+$light_grey     : rgb(200,200,200)
+$vlight_grey    : rgb(240,240,240)
+
+/* links */
+
+$border-size        : 2px
+$padding-vertical   : 8px
+$padding-horizontal : 15px
+
+/* main */
+
+.center
+    margin-left: auto
+    margin-right: auto
+
+body > *
+    @extend .center
+
+a:link, a:visited 
+    text-decoration: none
+    font-family: inherit
+    font-weight: bold
+    color: $black
+
+html 
+    overflow: -moz-scrollbars-vertical
+    overflow-y: scroll
+
+$posts-container-width : 800px
+#main-header
+    top: 0px
+    width: $posts-container-width
+
+#main-header-text
+    text-align: center
+
+#main-header-text > p 
+    font-family: $font_light
+    font-size: 60px
+    color: $light_grey
+    margin-top: 0px
+    margin-bottom: 20px
+
+#main-header-thing-text > p
+    font-family: $font_regular
+    font-size: $font_size_regular
+
+#main-menu-wr 
+    width: 100%
+    height: 50px
+    border-top: 2px dashed $light_grey
+    overflow: hidden
+
+#main-menu li 
+    float: left
+
+.menu-link
+    display: block
+    padding: $padding_vertical $padding_horizontal
+    text-decoration: none
+    color: $light_grey
+    cursor: pointer
+    -webkit-user-select: none
+    margin-left: 10px
+
+.menu-link-clicked
+    display: block
+    color: $black
+    border: $border_size solid $black
+    padding: ($padding_vertical - $border_size) ($padding_horizontal - $border_size)
+    margin-left: 10px
+    -webkit-user-select: none
+
+.menu-link:hover
+    color: $black
+    border: $border_size solid $grey
+    padding: ($padding_vertical - $border_size) ($padding_horizontal - $border_size)
+
+#main-menu 
+    width: 100%
+    float: left
+    opacity: 0
+    margin-top: -30px
+    padding: 0
+    list-style: none
+
+#tag-selector 
+    opacity: 0
+    visibility: hidden
+    width: $posts-container-width
+    height: auto
+    background-color: $vlight_grey
+    overflow: hidden
+
+.tag-selector-tag 
+    color: $grey
+    margin: 5px 10px 5px 10px
+    cursor: pointer
+    display: inline-block
+
+
+.tag-selector-tag:hover
+    color: $dark_grey
+
+
+.tag-selector-tag-selected
+    color: $vdark_grey
+    display: inline-block
+    margin: 5px 10px 5px 10px
+    cursor: pointer
+
+/* post-holder */
+#post-holder 
+    width: 900px
+    height: auto
+    margin-top: 50px
+
+/* post-list */
+$pl-width  : 700px
+$pl-timelocation-width : 150px
+$pl-tags-width : $pl-width - $pl-timelocation-width
+
+.post-list
+    @extend .center 
+    display: block
+    margin-top: 10px
+    width: $pl-width
+
+.pl-name 
+    font-size : $font_size_medium
+
+.pl-name > a 
+    font-weight: normal
+    color: $grey
+
+.pl-name > a:hover
+    color: $dark_grey
+
+.pl-tags 
+    display: inline-block
+    width: $pl-tags-width
+    font-size : $font_size_small
+    color: $grey
+    vertical-align: top
+
+.pl-tags > a 
+    text-decoration: none
+    font-family: inherit
+    font-weight: normal
+    color: $grey
+
+.pl-tags > a:hover
+    color: $vdark_grey
+
+.pl-time-location 
+    display: inline-block
+    width: $pl-timelocation-width
+    color: $grey
+    font-size: $font_size_small
+    vertical-align: top
+
+/* post */
+.post
+    margin-top: 10px
+    width: 100%
+    display: block
+
+.post > * 
+    width: 100%
+
+.post > header 
+    position: relative
+    font-family: $font_regular
+    margin-top: 20px
+    padding-bottom: 20px
+
+.p-name 
+    font-size : $font_size_big
+
+.p-name > a 
+    font-weight: normal
+    color: $grey
+
+.p-name > a:hover
+    color: $dark_grey
+
+.p-source-btn
+    display: block
+    position: absolute
+    right: 0px
+    top: 10px
+    font-size : $font_size_small
+    color: $grey
+
+.p-source-btn > a 
+    text-decoration: none
+    font-family: inherit
+    font-weight: normal
+    color: $grey
+
+.p-source-btn > a:hover
+    color: $vdark_grey
+
+.p-tags 
+    display: inline
+    font-size : $font_size_regular
+    color: $grey
+
+.p-tags > a 
+    text-decoration: none
+    font-family: inherit
+    font-weight: normal
+    color: $grey
+
+.p-tags > a:hover
+    color: $vdark_grey
+
+.p-time-location 
+    display: inline
+    position: absolute
+    color: $grey
+    right: 0px
+    font-size: $font_size_small
+
+.post > p 
+    font-family: $font_regular
+    font-size: $font_size_regular
+    line-height: 1.75em
+
+.post-footer 
+    font-size: $font_size_big
+    font-family: $font_regular
+    color: $light_grey
+    text-align: center
+    width: 100%
+
+/* navs */
+
+.range 
+    width: 250px
+
+input[type='range'] 
+    -webkit-appearance: none
+    background-color: $vlight_grey
+    height: 2px
+    vertical-align: middle
+    border: 1px solid $vlight_grey
+    outline: 1px solid $vlight_grey
+    outline-offset: -1px
+    margin-top: 15px
+
+input[type='range']::-webkit-slider-thumb 
+    -webkit-appearance: none !important
+    border-radius: 10px
+    background-color: $vlight_grey
+    height: 20px
+    width: 20px
+
+/* images */
+.img-container-wr 
+    overflow: hidden
+    height: 0px
+
+.img-container
+    /* image height */
+    height: 400px
+    display: -webkit-box
+    -webkit-box-orient: horizontal
+    position: relative
+    left: 0px
+
+.img-box-s 
+    @extend .center
+    position: relative
+
+.img-box 
+    height : 100%
+    padding-right: 10px
+    display: -webkit-box
+    -webkit-box-orient: vertical
+
+.img-box > img 
+    display: -webkit-box
+    height: 100%
+
+.img-box > div 
+    @extend .center
+    display: -webkit-box
+    overflow: hidden
+    max-width: 400px
+
+.img-name
+    font-size: $font_size_small
+    font-family: $font_regular
+    text-align: left
+
+/* btns prev and next */
+#btn-prevnext-wr
+    @extend .center
+    width: $posts-container-width
+    height: 200px
+    position: relative
+
+#btn-prev, #btn-next
+    visibility: hidden
+    padding: $padding_vertical $padding_horizontal
+    cursor: pointer
+    display: block
+    position: absolute
+    text-align: center
+    width: 100px
+    color: $light_grey
+
+#btn-prev
+    left: 0px
+
+#btn-next
+    right: 0px
+
+#btn-prev:hover, #btn-next:hover
+    border: $border_size solid $grey
+    padding: ($padding_vertical - $border_size) ($padding_horizontal - $border_size)
+    color: $black
+
+/* list */
+.list
+    @extend .center
+    font-weight: normal
+    font-family: $font_regular
+    font-size: $font_size_regular
+
+.list > ul
+    list-style-type: disk
+
+.list > ul > li
+    margin-top: 10px
+
+/* raw */
+$raw-width : 1000px
+.raw-content
+    @extend .center
+    width: $raw-width
+    margin-left: - ($raw-width - $posts-container-width) * 0.5 * 0.5
+    height: auto
+
+.raw-content > iframe
+    width: 100%
+    height: 100%

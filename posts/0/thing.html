@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        @font-face {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 300;
+          src: url("../../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype"); }
+        @font-face {
+          font-family: "Open Sans Condensed";
+          font-style: normal;
+          font-weight: 300;
+          src: url("../../fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf") format("truetype"); }
+        body{
+            height: 200px;
+        }
+        a:link, a:visited {
+          text-decoration: none;
+          font-family: inherit;
+          font-weight: bold;
+          color: black; }
+
+        #main-header-thing-wr {
+          width: 100%;
+          margin-top: 30px;
+          display: block;
+          z-index: 1;
+        }
+
+        #main-header-banner {
+          height: 150px;
+          width: 150px;
+          overflow: hidden; }
+
+        #main-header-banner > img {
+          width: inherit;
+          height: auto; }
+
+        #main-header-thing {
+          margin-left: auto;
+          margin-right: auto; 
+          display: -webkit-box;
+          -webkit-box-orient: horizontal;
+          background-color: white;
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          -webkit-filter: grayscale(100%);
+          -webkit-transition: -webkit-filter 0.5s, width 0.5s, -webkit-transform 0.5s;
+          transition: -webkit-filter 0.5s, width 0.5s, transform 0.5s;
+          box-shadow: 0 0 0 15px white, 0 0 0 20px #aaaaaa; }
+
+        #main-header-thing:hover {
+          -webkit-filter: grayscale(0%);
+          width: 640px; }
+
+        #main-header-thing > * {
+          display: -webkit-box;
+          padding-right: 15px;
+          background-color: white; }
+
+        #main-header-thing-text {
+          width: 450px;
+          height: 100%; }
+
+        #main-header-thing-text > p {
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px; }
+    </style>
+</head>
+<body>
+    <div id="main-header-thing-wr" height=300>
+        <div id="main-header-thing">
+            <div id="main-header-banner">
+                <img src="banner.jpg">
+            </div>
+            <div id="main-header-thing-text">
+                <p>I am a computer science student at KAIST. I love programming in C++ and Python. I like
+                algorithms, optimization, computer networks and functional languages. Occasionally I do experiments
+                in JS. You can find me on <a href="https://twitter.com/nikolayid">twitter</a>, <a href="https://facebook.com/nikolayid">facebook</a> and <a href="https://kr.linkedin.com/pub/nikolay-dubina/72/8b3/885/">linkedIn</a>. Say hello to me!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
