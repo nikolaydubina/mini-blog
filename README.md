@@ -1,4 +1,5 @@
-##Mini Blog
+## Mini Blog
+
 Just a mini-blog with basic functionality.
 Once I wanted to practise python and javascript, so I created this small-static blog generator.
 You can use it, but it was created as an experiment and it will not be maintaned.  
@@ -7,16 +8,19 @@ You can use it, but it was created as an experiment and it will not be maintaned
  * [Octopress](https://github.com/octopress/octopress)
  * [Hugo](https://github.com/spf13/hugo)
 
-##How to use?
+## How to use?
+
 1. Create a post description file and move all necessary files into one folder
 2. Run **python3 blog.py**
 3. Commit and push updates
 
-##Structure
+## Structure
+
 General idea is that each post is described as
 a sequence of "blocks" - basic structure units with specific purpose.
 
-##Implemented blocks
+## Implemented blocks
+
 name        | reg.expression   | description
 ------------|------------------|------------------
 paragraph   | @p(-)\*          | lines will be merged into single paragraph. ignoring newline symbols
@@ -29,6 +33,6 @@ Each regular expression is easily customizable in **postparser.py**
 
 Requires: SASS, Python3
 
-##Used open-source code:
+## Used open-source code:
  - [docopt](https://github.com/docopt/docopt)
  - [highlight.js](https://github.com/isagalaev/highlight.js)
